@@ -21,10 +21,7 @@ hashids = Hashids(min_length=4, salt=app.config['SECRET_KEY'])
 @app.route('/')
 def home():
     ip = request.remote_addr
-    if not url:
-       flash('The URL is required!')
-       return redirect(url_for('index'))
-       return render_template('home.html',count = ip)
+    return render_template('home.html',count = ip)
 
 @app.route('/helpline')
 def help():
