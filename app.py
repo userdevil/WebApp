@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request, flash, redirect, url_for
 import sqlite3
 from hashids import Hashids
-import requests
 import os
 import phonenumbers
 from phonenumbers import geocoder
