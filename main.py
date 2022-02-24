@@ -118,6 +118,3 @@ def stats():
         urls.append(url)
 
     return render_template('stats.html', urls=urls)
-
-if __name__=='__main__':
-    app.run(debug=False,host='0.0.0.0',port=int(os.environ.get('PORT', 8080)))
