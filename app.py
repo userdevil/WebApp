@@ -29,6 +29,10 @@ def help():
     ip = request.remote_addr
     return render_template('help.html',count = ip)
 
+@app.route('/sitemap.html')
+def sitemap():
+    return render_template('sitemap.html')
+
 @app.route('/phtracker')
 def ph():
     ip = request.remote_addr
