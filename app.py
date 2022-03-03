@@ -33,6 +33,10 @@ def help():
 def sitemap():
     return render_template('sitemap.html')
 
+@app.route('/sitemap.xml')
+def site():
+    return render_template('sitemap.xml')
+
 @app.route('/phtracker')
 def ph():
     ip = request.remote_addr
